@@ -33,6 +33,7 @@ TARGET_GLOBAL_CFLAGS += -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp
 
 TARGET_GCC_VERSION_EXP := 4.8
+TARGET_USE_O3 := true
 
 ifdef EXYNOS4210_ENHANCEMENTS
 COMMON_GLOBAL_CFLAGS += -DEXYNOS4_ENHANCEMENTS
