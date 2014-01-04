@@ -35,5 +35,5 @@ int
 healthd_board_battery_update(struct android::BatteryProperties *props)
 {
     // return 0 to log periodic polled battery status to kernel log
-    return 0;
+    return 1;
 }
