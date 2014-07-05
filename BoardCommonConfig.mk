@@ -174,5 +174,19 @@ BOARD_CHARGER_RES := device/samsung/galaxys2-common/res/charger
 
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/galaxys2-common/shbootimg.mk
 
+#TWRP configs
+TW_HAS_NO_RECOVERY_PARTITION := true
+DEVICE_RESOLUTION := 480x800
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TW_INTERNAL_STORAGE_PATH := "/emmc" #needs confirmation
+TW_INTERNAL_STORAGE_MOUNT_POINT := "emmc" #needs confirmation
+TW_EXTERNAL_STORAGE_PATH := "/sdcard" #needs confirmation
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard" #needs confirmation
+TW_NO_REBOOT_BOOTLOADER := true
+TW_DEFAULT_EXTERNAL_STORAGE := false
+TW_FLASH_FROM_STORAGE := true
+TW_INCLUDE_INJECTTWRP := false
+TW_HAS_DOWNLOAD_MODE := true
+
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/galaxys2-common/BoardConfigVendor.mk
