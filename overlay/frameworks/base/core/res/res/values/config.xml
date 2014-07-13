@@ -166,4 +166,9 @@
 
     <!-- Boolean to force HW Rotation Lock -->
     <bool name="config_hasRotationLockSwitch">false</bool>
+
+    <!-- Minimum screen brightness setting allowed by the power manager.
+         The user is forbidden from setting the brightness below this level. -->
+    <integer name="config_screenBrightnessSettingMinimum">4</integer>
+
 </resources>
