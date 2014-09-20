@@ -185,5 +185,8 @@ BOARD_HAL_STATIC_LIBRARIES := libhealthd.exynos4
 #TWRP configs
 TW_HAS_NO_RECOVERY_PARTITION := true
 
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/galaxys2-common/BoardConfigVendor.mk
