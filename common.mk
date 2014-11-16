@@ -144,6 +144,9 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 
+# Override default boot animation
+PRODUCT_BOOTANIMATION := device/samsung/galaxys2-common/bootanimation.zip
+
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml \
